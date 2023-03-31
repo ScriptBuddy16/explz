@@ -8,7 +8,7 @@ import sys
 
 
 @stark.on_message(filters.command(["start"]) & ~filters.edited)
-async def Start_msg(bot: stark , m: Message):
+async def Start_msg(Client: stark , m: Message):
     await bot.send_photo(
     m.chat.id,
     photo="https://telegra.ph/file/cef3ef6ee69126c23bfe3.jpg",
